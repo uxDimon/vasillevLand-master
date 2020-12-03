@@ -1,0 +1,256 @@
+.banner-bot-item{
+  &_time:hover{
+    .banner-bot-item__img{
+      path{
+        &:nth-child(1){
+          animation: time1 .8s;
+        }
+        &:nth-child(2){
+          animation: time2 .8s;
+        }
+      }
+    }
+  }
+  &_nose:hover{
+    .banner-bot-item__img{
+      rect{
+        &:nth-last-child(1), &:nth-last-child(2){
+          animation: rect 2s;
+        }
+        &:nth-last-child(3), &:nth-last-child(4){
+          animation: rect 2s .2s;
+        }
+        &:nth-last-child(5), &:nth-last-child(6){
+          animation: rect 2s .4s;
+        }
+        &:nth-last-child(7), &:nth-last-child(8){
+          animation: rect 2s .6s;
+        }
+        &:nth-last-child(9), &:nth-last-child(10){
+          animation: rect 2s .8s;
+        }
+        &:nth-last-child(11), &:nth-last-child(12){
+          animation: rect 2s 1.2s;
+        }
+      }
+    }
+  }
+  &_bed:hover{
+    .banner-bot-item__img{
+      path{
+        &:nth-child(6), &:nth-child(4), &:nth-child(5){
+          transform-origin: center center;
+          animation: heart .8s;
+        }
+      }
+    }
+  }
+  &_lang:hover{
+    .banner-bot-item__img{
+      path{
+        &:nth-child(4){
+          animation: circle .8s;
+        }
+        &:nth-child(5){
+          animation: circle .8s .8s;
+        }
+        &:nth-child(6){
+          animation: circle .8s .2s;
+        }
+        &:nth-child(7){
+          animation: circle .8s .4s;
+        }
+        &:nth-child(8){
+          animation: circle .8s .6s;
+        }
+      }
+    }
+  }
+  &_disc:hover{
+    .banner-bot-item__img{
+      path{
+        &:nth-last-child(1){
+          animation: nose21 .8s;
+        }
+        &:nth-last-child(2){
+          animation: nose22 .8s;
+        }
+        &:nth-last-child(3){
+          animation: nose23 .8s;
+        }
+        &:nth-last-child(4){
+          animation: nose24 .8s;
+        }
+      }
+    }
+  }
+  &_spritz:hover{
+    .banner-bot-item__img{
+      g{
+        animation: spritz .8s;
+      }
+    }
+  }
+}
+
+
+
+
+@keyframes time1 {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(2px) translateY(0px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(0px) translateY(-2px);
+  }
+  to {
+    transform: translateX(0) translateY(0);
+  }
+}
+@keyframes time2 {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-2px) translateY(0px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(0px) translateY(-2px);
+  }
+  to {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+
+@keyframes heart {
+  from {
+    transform: translateY(0);
+  }
+  40%{
+    transform: translateY(-9px);
+  }
+  60%{
+    transform: translateY(-5px);
+  }
+  80%{
+    transform: translateY(-7px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes spritz {
+  from {
+    transform: translateY(0) translateX(0);
+  }
+  50%{
+    transform: translateY(4px) translateX(-4px);
+  }
+  to {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+
+@keyframes nose21 {
+  from{
+    transform: translateY(0) translateX(0);
+  }
+
+  20%, 40%, 60% {
+    transform: translateY(-1px) translateX(4px);
+  }
+
+  30%, 50%, 70% {
+    transform: translateY(1px) translateX(-2px);
+  }
+
+  to{
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes nose22 {
+  from{
+    transform: translateY(0) translateX(0);
+  }
+
+  20%, 40%, 60% {
+    transform: translateY(1px) translateX(4px);
+  }
+
+  30%, 50%, 70% {
+    transform: translateY(-1px) translateX(-2px);
+  }
+
+  to{
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes nose23 {
+  from{
+    transform: translateY(0) translateX(0);
+  }
+
+  20%, 40%, 60% {
+    transform: translateY(-1px) translateX(-4px);
+  }
+
+  30%, 50%, 70% {
+    transform: translateY(1px) translateX(2px);
+  }
+
+  to{
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes nose24 {
+  from{
+    transform: translateY(0) translateX(0);
+  }
+
+  20%, 40%, 60% {
+    transform: translateY(1px) translateX(-4px);
+  }
+
+  30%, 50%, 70% {
+    transform: translateY(-1px) translateX(2px);
+  }
+
+  to{
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes circle {
+  from{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes rect {
+  from{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

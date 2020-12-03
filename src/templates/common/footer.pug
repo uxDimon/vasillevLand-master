@@ -1,0 +1,60 @@
+
+form.form-popup
+  .form-popup-wrap
+    p.form-wrap__title Задайте свой вопрос напрямую
+      .form-wrapperFields
+        label.form-label
+          | Ваше имя
+          input(type="text" data-required="true" data-type="text" placeholder="Напишите Ваше имя")
+          p.form-label__alert Это обязательное поле
+        label.form-label
+          | Телефон
+          input(type="text" data-required="true" data-type="tel" placeholder="+7 (999) 999-99-99")
+          p.form-label__alert Это обязательное поле
+        label.form-label.form-label_comment
+          | Комментарий
+          input(type="text" data-type="text" placeholder="Краткое изложение целей сделает разговор продуктивнее")
+        label.form-label.form-label_file
+          .form-file-overlay
+          input(type="file" multiple)
+          .form-file
+            <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.125 20C1.85048 20 0 18.4229 0 16.4844V4.6875C0 2.10281 2.4673 0 5.5 0C8.5327 0 11 2.10281 11 4.6875V16.4844H9.625V4.6875C9.625 2.74898 7.77452 1.17188 5.5 1.17188C3.22548 1.17188 1.375 2.74898 1.375 4.6875V16.4844C1.375 17.7767 2.60865 18.8281 4.125 18.8281C5.64135 18.8281 6.875 17.7767 6.875 16.4844V7.03125C6.875 6.38508 6.25817 5.85938 5.5 5.85938C4.74183 5.85938 4.125 6.38508 4.125 7.03125V16.4844H2.75V7.03125C2.75 5.73891 3.98365 4.6875 5.5 4.6875C7.01635 4.6875 8.25 5.73891 8.25 7.03125V16.4844C8.25 18.4229 6.39952 20 4.125 20Z" fill="black"/>
+            </svg>
+            .form-file-block
+              p.form-file__title Прикрепить фото
+              p.form-file__text До 20 мб
+          .form-file__close
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 9L5 5M9 1L5 5M5 5L9 9M5 5L1 1" stroke="rgba(0, 0, 0, 0.25)" stroke-linecap="round"/>
+            </svg>
+      .form-left-bot
+        button(type="submit" data-type="submit").btn.btn_blue.form-left-bot__btn Жду звонка
+        p.form-left-bot__text Отправляя личные данные, Вы соглашаетесь с политикой конфиденциальности
+    <svg class="form-popup__close" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 33L17 17M33 1L17 17M17 17L33 33M17 17L1 1" stroke="black" stroke-width="2"/>
+    </svg>
+.success
+  p.success__text
+    | 👍<br>
+    | Сообщение успешно<br>
+    | отправлено, мы свяжемся<br>
+    | с Вами в ближайшее время
+footer.w1400.footer
+  img(src="assets/images/logo.svg" alt="Doctor Vasilev" data-aos-once="true"  data-aos-offset="0" data-aos="fade-up").footer__logo
+  .footer-social
+    a(href="#"  data-aos-offset="0" data-aos="fade-up" data-aos-once="true" data-aos-delay="50").footer-social__link Инстаграм
+    a(href="#"  data-aos-offset="0" data-aos="fade-up" data-aos-once="true" data-aos-delay="100").footer-social__link Фейсбук
+    a(href="#"  data-aos-offset="0" data-aos="fade-up" data-aos-once="true" data-aos-delay="150").footer-social__link Вконтакте
+  .footer-contacts( data-aos-offset="0" data-aos="fade-up" data-aos-once="true" data-aos-delay="200")
+    a(href="tel: +7 (911) 737-37-37").footer-contacts__phone +7 (911) 737-37-37
+    a(href="#").footer-contacts__link
+      img(src="assets/images/social/telegram.svg", alt="Telegram")
+    a(href="#").footer-contacts__link
+      img(src="assets/images/social/viber.svg", alt="Viber")
+    a(href="#").footer-contacts__link
+      img(src="assets/images/social/whats.svg", alt="What`s Up")
+  .footer-texts
+    p.footer-texts__p © 2020 Doctor Vasilev. All rights reserved.
+    a(href="#").footer-texts__a Политика использования персональных данных
+    p.footer-texts__p(style="text-align: right;") Сделано с любовью в <a href="https://ra-studio.ru/" class="footer-texts__ra">RA-Studio</a>
